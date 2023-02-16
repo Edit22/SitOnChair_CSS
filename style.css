@@ -1,0 +1,198 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: helvetica, arial, sans-serif;
+}
+
+/* NAVIGATION */
+
+.navigation {
+    height: 50px;
+    background-color: black;
+}
+
+.brand {
+    position: absolute;
+    padding-left: 20px;
+    float: left;
+    line-height: 50px;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.brand a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.brand a span {
+    color: cadetblue;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    float: left;
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    padding: 0 20px;
+    line-height: 50px;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: cadetblue;
+}
+
+ul li ul.dropdown {
+    min-width: 100%;
+    background-color: black;
+    display: none;
+    position: absolute;
+    z-index: 999;
+    left: 0;
+    margin-top: 15px;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+ul li ul.dropdown li {
+    display: block;
+}
+
+
+/* HEADER */
+
+/* Color stop: A gradient going from the bottom to top,
+   starting blue, turning green at 40% of its length,
+   and finishing red 
+   linear-gradient(0deg, blue, green 40%, red); */
+
+
+.header {
+    background: linear-gradient(0deg, grey, white 40%);
+    height: 600px;
+
+}
+
+
+.header-container {
+    position: relative;
+    max-width: 1200px;
+    height: 400px;
+    margin: 0 auto;
+
+}
+
+.header-img-black {
+    width: 300px;
+    height: 300px;
+
+}
+
+.header-img-black img {
+       width: 500px;
+       height: 500px;
+       margin: 20px 20px;
+}
+
+.header-description1 {
+   position: absolute;
+   margin-left: 500px;
+   margin-top: -200px;
+   margin-right: 50px;
+}
+
+.header-description1 h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.header-description1 h1 span {
+   color: cadetblue;
+}
+
+.header-description1 p {
+    margin-top: 30px;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 1px;;
+}
+
+.header-description1 button {
+    position: absolute;
+    font-size: 20px;
+    text-transform: uppercase;
+    border: 1px solid cadetblue;
+    background-color: cadetblue;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 30px;
+    margin-top: 40px;
+    left: 200px;
+}
+
+
+/* TITLES */
+
+.title {
+   display: flex;
+   flex-direction: row;
+   min-height: 100vh;
+}
+
+.titles-container {
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    max-width: 1200px;
+    margin-bottom: 100px;
+    margin: 100px auto;
+ 
+}
+
+.titles-container>div {
+    flex-basis: 30%;
+}
+
+.titles-container img {
+    width: 100%;
+    /* max-width: 400px;
+    height: auto;
+    background-size: cover;
+    margin: 0 10px; */
+}
+
+
+/* TITLES - TRANSFORM */
+
+
+
+
