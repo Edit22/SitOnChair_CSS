@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: helvetica, arial, sans-serif;
+    font-family: Raleway, sans-serif;
 }
 
 /* NAVIGATION */
@@ -29,7 +29,7 @@
 }
 
 .brand a span {
-    color: cadetblue;
+    color: #38C3AD;
 }
 
 .nav-container {
@@ -64,7 +64,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: cadetblue;
+    color: #38C3AD;
 }
 
 ul li ul.dropdown {
@@ -75,11 +75,21 @@ ul li ul.dropdown {
     z-index: 999;
     left: 0;
     margin-top: 15px;
+    
+    transition: all 1s ease 3s;
   
+}
+
+ul li ul a {
+    text-transform: none;
+    line-height: 25px;
+    font-weight: 200;
 }
 
 ul li:hover ul.dropdown {
     display: block;
+    transition: all 1s ease 0s;
+   
  
 }
 
@@ -121,14 +131,14 @@ ul li ul.dropdown li {
    position: absolute; 
    left: 100px;
    top: 200px;
-   color:rgba(18, 240, 203, 0.881);
+   color:#38C3AD;
 }
 
 .fa-angle-right {
     position: absolute; 
     right: 100px;
     top: 200px;
-    color:rgba(18, 240, 203, 0.881);
+    color:#38C3AD;
    
 }
 
@@ -153,7 +163,7 @@ ul li ul.dropdown li {
 }
 
 .header-description1 h1 span {
-   color: cadetblue;
+   color: #38C3AD;
 }
 
 .header-description1 p {
@@ -172,8 +182,8 @@ ul li ul.dropdown li {
     text-align: center;
     font-size: 20px;
     text-transform: uppercase;
-    border: 1px solid rgba(18, 240, 203, 0.881);
-    background-color: rgba(18, 240, 203, 0.881);
+    border: 1px solid #38C3AD;
+    background-color: #38C3AD;
     color: white;
     border-radius: 10px;
     padding: 10px 10px;
@@ -229,6 +239,14 @@ ul li ul.dropdown li {
   transform: scale(1.2);
 }
 
+.img1:hover .titlebackground1,
+.img2:hover .titlebackground2,
+.img3:hover .titlebackground3 {
+    top: 0;
+    height: 100%;
+}
+ 
+
 .imgtxt1,
 .imgtxt2,
 .imgtxt3 {
@@ -263,6 +281,7 @@ ul li ul.dropdown li {
     top: 100px;
     z-index: 1;
     transition: all 0.6s;
+    overflow: hidden;
 }
 
 .titlebackground1:hover,
@@ -324,7 +343,7 @@ ul li ul.dropdown li {
 
 
 .pricing-underline {
-    border-bottom: 8px solid rgba(110, 225, 206, 0.881);
+    border-bottom: 8px solid #38C3AD;
     width: 35%;
     top: 20px; 
 }
@@ -355,7 +374,8 @@ ul li ul.dropdown li {
 
 .pricing-container h2 {
     font-size: 20px;
-    color: rgba(110, 225, 206, 0.881);
+    font-weight: 300;
+    color: #38C3AD;
     text-align: center;
     text-transform: uppercase;
     margin: 20px;
@@ -406,7 +426,7 @@ button {
     margin-top: 80px;
     text-align: center;
     font-family: arial;
-    color: rgba(110, 225, 206, 0.881);
+    color: #38C3AD;
     cursor: pointer;
 }
 
@@ -414,9 +434,9 @@ button {
 
 
 .basic button, .advance button {
-    background-color:  rgba(110, 225, 206, 0.881);
+    background-color:  #38C3AD;
     color: white;
-    border-color:  rgba(110, 225, 206, 0.881);;
+    border-color:  #38C3AD;;
 }
 
 .basic, .advance {
@@ -438,7 +458,7 @@ button {
 }
 
 .standard {
-    background-color:  rgba(110, 225, 206, 0.881);
+    background-color:  #38C3AD;
 }
 
 .basiccircle, .standardcircle, .advancecircle {
@@ -467,7 +487,7 @@ button {
 
 
 .contact-h2-underline {
-    border-bottom: 8px solid rgba(110, 225, 206, 0.881);
+    border-bottom: 8px solid #38C3AD;
     width: 35%;
     top: 20px; 
 }
@@ -494,14 +514,14 @@ form {
 }
 
  .feedback-input {
-    color: rgba(110, 225, 206, 0.881);
+    color: #38C3AD;
     font-family: Helvetica, Arial, sans-serif;
     font-weight:500;
     font-size: 18px;
     border-radius: 5px;
     line-height: 22px;
     background-color: transparent;
-    border:1px solid rgba(110, 225, 206, 0.881);
+    border:1px solid #38C3AD;
     transition: all 0.3s;
     padding: 13px;
     margin-bottom: 15px;
@@ -511,7 +531,7 @@ form {
     outline:0;
   }
   
-  .feedback-input:focus { border:2px solid rgba(110, 225, 206, 0.881);; }
+  .feedback-input:focus { border:2px solid #38C3AD; }
   
   textarea {
     height: 150px;
@@ -520,9 +540,9 @@ form {
   }
   
   [type="submit"] {
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-family: Raleway, sans-serif;
     width: 100%;
-    background: rgba(110, 225, 206, 0.881);
+    background: #38C3AD;
     border-radius:5px;
     border:0;
     cursor:pointer;
@@ -531,23 +551,70 @@ form {
     padding-top:10px;
     padding-bottom:10px;
     transition: all 0.3s;
+    font-weight: 600;
     margin-top:-4px;
-    font-weight: 700;
+    
   }
-  [type="submit"]:hover { background:rgba(18, 240, 203, 0.881); }
+  [type="submit"]:hover { background:#38C3AD; }
 
 
 /* RED CHAIR CONACT FORM SECTION */
 
 
-.red-chair-contactsection {
+.red-chair-contact-section {
     margin-right: 150px;
     margin-left: 50px;
     margin-top: 50px;
 
 }
 
+.consent-container {
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+
+
+.consent {
+    width: 50px;
+    height: 50px;
+}
+
+.consent-txt { 
+  position: absolute;
+  font-size: 20px;
+  line-height: 50px;
+  margin-left: 10px;
+  text-align: left;
+}
 
 
 
 /* SOCIAL MEDIA SECTION */
+
+.social-media-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    height: 200px;
+    
+}
+
+.social-container p {
+    font-weight: 300;
+    color: rgb(145, 145, 145);
+}
+
+.footer-logo {
+    font-size: 20px;
+    text-transform: uppercase;
+    color:rgb(145, 145, 145);
+}
+
+
+
+
+
